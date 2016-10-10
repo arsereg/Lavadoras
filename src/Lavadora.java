@@ -59,8 +59,8 @@ import javax.swing.*;
     /**
      * @param modelo the modelo to set
      */
-    public void setModelo(String modelo) {
-        this.modelo = modelo;
+    public void setModelo(String pmodelo) {
+        this.modelo = pmodelo;
     }
     
     /**
@@ -73,8 +73,8 @@ import javax.swing.*;
     /**
      * @param prenda the prenda to set
      */
-    public void setPrenda(Ropa prenda) {
-        this.prenda = prenda;
+    public void setPrenda(Ropa pprenda) {
+        this.prenda = pprenda;
     }
 
     /**
@@ -87,8 +87,8 @@ import javax.swing.*;
     /**
      * @param numSerie the numSerie to set
      */
-    private void setNumSerie(String numSerie) {
-        this.numSerie = numSerie;
+    private void setNumSerie(String pnumSerie) {
+        this.numSerie = pnumSerie;
     }
 
     /**
@@ -101,8 +101,8 @@ import javax.swing.*;
     /**
      * @param tiempoRestante the tiempoRestante to set
      */
-    public void setTiempoRestante(int tiempoRestante) {
-        this.tiempoRestante = tiempoRestante;
+    public void setTiempoRestante(int ptiempoRestante) {
+        this.tiempoRestante = ptiempoRestante;
     }
 
     /**
@@ -115,8 +115,8 @@ import javax.swing.*;
     /**
      * @param detergenteCargado the detergenteCargado to set
      */
-    private void setDetergenteCargado(boolean detergenteCargado) {
-        this.detergenteCargado = detergenteCargado;
+    private void setDetergenteCargado(boolean pdetergenteCargado) {
+        this.detergenteCargado = pdetergenteCargado;
     }
 
     /**
@@ -129,8 +129,8 @@ import javax.swing.*;
     /**
      * @param volumenActual the volumenActual to set
      */
-    public void setVolumenActual(double volumenActual) {
-        this.volumenActual = volumenActual;
+    public void setVolumenActual(double pvolumenActual) {
+        this.volumenActual = pvolumenActual;
     }
     
     private static void aumentarCantLavadoras(){
@@ -153,8 +153,8 @@ import javax.swing.*;
     /**
      * @param lavando the lavando to set
      */
-    private void setLavando(boolean lavando) {
-        this.lavando = lavando;
+    private void setLavando(boolean plavando) {
+        this.lavando = plavando;
     }
     
     /**
@@ -167,12 +167,8 @@ import javax.swing.*;
     /**
      * @param potencia the potencia to set
      */
-    private void setPotencia(int potencia) {
-        this.potencia = potencia;
-    }
-    
-    public void drenar(){
-        this.setVolumenActual(0);
+    private void setPotencia(int ppotencia) {
+        this.potencia = ppotencia;
     }
     
     public String toString(){
@@ -316,6 +312,10 @@ import javax.swing.*;
         }else{
             this.iniciar();
         }
+    }
+    
+    public void drenar(){
+        this.setVolumenActual(0);
     }
 
     

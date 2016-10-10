@@ -32,8 +32,8 @@ public class Ropa {
     /**
      * @param tipoPrenda the tipoPrenda to set
      */
-    public void setTipoPrenda(String tipoPrenda) {
-        this.tipoPrenda = tipoPrenda;
+    public void setTipoPrenda(String ptipoPrenda) {
+        this.tipoPrenda = ptipoPrenda;
     }
 
     /**
@@ -46,8 +46,8 @@ public class Ropa {
     /**
      * @param color the color to set
      */
-    public void setColor(String color) {
-        this.color = color;
+    public void setColor(String pcolor) {
+        this.color = pcolor;
     }
 
     /**
@@ -60,8 +60,8 @@ public class Ropa {
     /**
      * @param nivelSuciedad the nivelSuciedad to set
      */
-    public void setNivelSuciedad(int nivelSuciedad) {
-        this.nivelSuciedad = nivelSuciedad;
+    public void setNivelSuciedad(int pnivelSuciedad) {
+        this.nivelSuciedad = pnivelSuciedad;
     }
     
     
